@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---------------------THE NAVBAR-----------------------*/
+.nav-bar{
+    height: 100px;
+    background-color: #687EFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.org-name{
+    font-size: 30px;
+    color: white;
+}
+
+.nav-bar-list{
+    display: none;
+}
+
+.nav-bar-list-visible{
+    height: 30vh;
+    width: 200px;
+    margin: 0;
+    padding: 30px 10px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 20px 0 20px 20px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0);
+}
+
+.nav-bar-list-item{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.nav-bar-list-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-list-item:hover{
+    font-size: 20px;
+    background-color: #687EFF;
+    transition: background-color 500ms ease-out, font-size 500ms ease-out;
+    color: white;
+}
+
+.nav-bar-list-item:hover ~ li{
+    opacity: 0.1;
+}
+
+.line{
+    height: 8px;
+    width: 50px;
+    border-radius: 6px;
+    background-color: white;
+    margin-top: 4px;
+}
+
+/*-----------------------THE REGISTRATION SECTION------------------*/
+.registration{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.reg-section-heading{
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.reg-section-sub-heading{
+    margin-top: 0px;
+    background-color: #687EFF;
+    color: white;
+}
+
+.registration-form{
+    margin-top: 40px;
+    padding: 30px 10px 20px 10px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-form label{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.registration-form input{
+    height: 20px;
+    width: 80%;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    margin: 8px;
+    outline: none;
+}
+
+.registration-form input:hover{
+    border: 2px solid #687EFF;
+}
+
+#reg-btn{
+    height: 30px;
+    width: 50%;
+    background-color: #687EFF;
+    color: white;
+    text-transform: uppercase;
+}
+
+#reg-btn:hover{
+    background-color: white;
+    color: #687EFF;
+    font-weight: 500;
+    border: 2px solid #687EFF;
+}
+
+.reg-line-below-btn{
+    margin: 0;
+    text-transform: lowercase;
+    font-size: 10px;
+}
+
+.reg-line-below-btn a{
+    color: black;
+}
+
+.reg-line-below-btn:hover{
+    background-color: #687EFF;
+    width: 100%;
+}
+
+.reg-line-below-btn:hover a{
+    color: white;
+}
+
+/*-------------------------THE FOOTER SECTION---------------------*/
+.footer-section{
+    margin-top: 40px;
+    height: auto;
+    background-color: #687EFF;
+    padding: 20px 10px;
+}
+
+.footer-section-copyright{
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+}
+
+.social-media-links-container{
+    padding: 30px 20px;
+}
+
+.social-media-links-container ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media-links-container ul li{
+    list-style-type: none;
+}
+
+.social-media-links-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    height: 2px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.footer-section-bottom-line a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
